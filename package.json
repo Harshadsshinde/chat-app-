@@ -9,7 +9,8 @@
   "build": "npm run install:all && npm run build:frontend",
   "install:all": "npm install --prefix Backend && npm install --prefix Frontend",
   "start:frontend": "npm run start --prefix Frontend",
-  "build:frontend": "npm run build --prefix Frontend"
+  "build:frontend": "npm run build --prefix Frontend",
+  "postinstall": "npm install --prefix Frontend && npm install --prefix Backend"
 },
 
   "keywords": [],
